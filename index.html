@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="main.css">
+    <script defer src="Node.js"></script>
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="app">
+        <!--    Добавление задачи-->
+        <section class="task-manager">
+            <form class="task-form">
+                <div class="main-task">
+                    <label for="task-name" class="main-task__title">Task name</label>
+                    <input type="text" class="main-task__task-name-input js__task-name" placeholder="Enter task name" id="task-name"/>
+                </div>
+                <div class="subtask">
+                    <div class="subtask__title-container">
+                        <h2 class="subtask__title">Subtasks</h2>
+                        <button class="subtask__add-subtask js__add-subtask"></button>
+                    </div>
+                    <div class="subtask__description">
+                        <p class="subtask__description-name">Description</p>
+                        <p class="subtask__description-time">Time</p>
+                        <p class="subtask__description-remove">Remove</p>
+                    </div>
+                    <ul class="subtask__list js__subtask-list">
+
+                    </ul>
+                </div>
+                <div class="form_buttons">
+                    <button class="form-buttons__save js__subtask-save">save task in local storage</button>
+                    <button class="form-buttons__create js__create-new-task">create new task</button>
+                </div>
+            </form>
+        </section>
+        <!--Список задач-->
+        <section class="tasks-section">
+            <h2 class="tasks-section__title">Task list</h2>
+            <div class="tasks-section__tasks-container">
+                <ul class="task-list js__task-list">
+
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
